@@ -1,0 +1,27 @@
+.nav-link{
+	position: relative;
+}
+.nav-link::after{
+	content: '';
+	height: 4px;
+	width: 0%;
+	margin: 0 auto;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.3s;
+}
+
+.nav-link:hover::after{
+	width: 100%;
+}
+
+.form-group{
+	background-color: #E6B043;
+	padding: 30px;
+	margin: auto;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	border: 2px black;
+}
